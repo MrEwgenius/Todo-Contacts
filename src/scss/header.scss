@@ -1,0 +1,44 @@
+.header {
+    max-width: 1170px;
+    margin: auto;
+    height: 70px;
+    background-color: #c77777;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .book-contacts {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: $blue;
+        font-size: 18px;
+        font-weight: 700;
+    }
+    .buttons-group {
+        display: flex;
+        justify-content: space-between;
+        gap: 16px;
+        .add-contact {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            // width: 178px;
+            padding: 10px 14px;
+            // height: 38px;
+            border-radius: 6px;
+            background: $add-contact;
+            color: $white;
+            font-size: 14px;
+            font-weight: 700;
+        }
+        .view-group {
+            padding: 10px 14px;
+            color: $white;
+            background: $blue;
+            border-radius: 6px;
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 18px;
+        }
+    }
+}

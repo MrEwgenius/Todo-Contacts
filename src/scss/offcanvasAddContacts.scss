@@ -1,0 +1,74 @@
+.offcanvas-header {
+    border-bottom: 1px solid rgb(184, 184, 184);
+    padding: 24px;
+}
+
+.offcanvas-start {
+    max-width: 312px;
+}
+.offcanvas-title {
+    color: $black;
+    font-size: 18px;
+    font-weight: 700;
+}
+.offcanvas-body {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 24px;
+    .group {
+        display: flex;
+        justify-content: space-between;
+        gap: 12px;
+        input {
+            font-size: 14px;
+            width: 100%;
+            height: 38px;
+            border-radius: 6px;
+            background: #0000002a;
+            color: #000000;
+            text-align: left;
+            padding-left: 10px;
+        }
+        img {
+            cursor: pointer;
+            width: 38px;
+            height: 38px;
+            border-radius: 6px;
+            border: 1px solid rgba(0, 0, 0, 0.199);
+        }
+        .dropdown {
+            width: 100%;
+            button {
+                border: none;
+                color: #00000071;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+        }
+    }
+}
+.add-save-buttons {
+    padding: 24px;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    button {
+        padding: 10px 14px;
+        border-radius: 6px;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 18px;
+        width: 104px;
+        height: 38px;
+    }
+    .add-button {
+        color: $blue;
+        background-color: $white;
+    }
+    .save-button {
+        color: $white;
+        background-color: $blue;
+    }
+}
