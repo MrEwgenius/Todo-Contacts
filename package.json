@@ -1,0 +1,19 @@
+{
+  "name": "todo-contacts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MrEwgenius/Todo-Contacts.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MrEwgenius/Todo-Contacts/issues"
+  },
+  "homepage": "https://github.com/MrEwgenius/Todo-Contacts#readme"
+}
