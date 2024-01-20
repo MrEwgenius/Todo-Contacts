@@ -13,16 +13,15 @@
 
 html,
 body {
-    font-family: "Arial", cursive;
+    font-family: "Arial", sans-serif;
     font-weight: 400;
 }
 
 .containers {
-    // padding: 0 15px;
-    // margin: auto;
     position: relative;
     z-index: 50;
-    background-color: #dfd8d8;
+   
+    background: #f6f7f9;
 }
 button {
     display: block;
@@ -32,6 +31,4 @@ button {
 input {
     border: none;
 }
-ul{
 
-}

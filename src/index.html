@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
@@ -12,99 +12,64 @@
 </head>
 
 <body>
+    <div class="header">
+        <div class="book-contacts"><img src="./assets/icons/contact-book.svg" alt="#"> Книга контактов</div>
+        <div class="buttons-group">
+            <button data-bs-toggle="offcanvas" data-bs-target="#offcanvasAddContacts" class="add-contact"> Добавить
+                контакт <img src="./assets/icons/add.svg" alt="#"></button>
+            <button data-bs-toggle="offcanvas" data-bs-target="#offcanvasGroup" class="view-group">Группы</button>
+        </div>
+    </div>
     <div class="containers">
-        <div class="header">
-            <div class="book-contacts"><img src="./assets/icons/contact-book.svg" alt="#"> Книга контактов</div>
-            <div class="buttons-group">
-                <button data-bs-toggle="offcanvas" data-bs-target="#offcanvasAddContacts" class="add-contact"> Добавить
-                    контакт <img src="./assets/icons/add.svg" alt="#"></button>
-                <button data-bs-toggle="offcanvas" data-bs-target="#offcanvasGroup" class="view-group">Группы</button>
-            </div>
-        </div>
-
-        <div class="offcanvas-from-group">
-            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasGroup"
-                aria-labelledby="offcanvasGroupLabel">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasGroupLabel">Группы контактов</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Закрыть"></button>
-                </div>
-                <div class="offcanvas-body">
-                    <div class="group">
-                        <button class="group-friends ">Друзья</button>
-                        <img src="./assets/icons/delete.svg" alt="#">
-                    </div>
-                    <div class="group">
-                        <button class="group-colleagues ">Коллеги</button>
-                        <img src="./assets/icons/delete.svg" alt="#">
-
-                    </div>
-
-                    <!-- <div class="dropdown mt-3">
-                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
-                            Кнопка раскрывающегося списка
-                        </button>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Действие</a></li>
-                            <li><a class="dropdown-item" href="#">Другое действие</a></li>
-                            <li><a class="dropdown-item" href="#">Что-то еще здесь</a></li>
-                        </ul>
-                    </div> -->
-                </div>
-                <div class="add-save-buttons">
-                    <button class="add-button">Добавить</button>
-                    <button class="save-button">Удалить</button>
-                </div>
-            </div>
-        </div>
-
-        <div class="offcanvas-from-add-contacts">
-            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasAddContacts"
-                aria-labelledby="offcanvasAddContactsLabel">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasAddContactsLabel">Добавление контакта</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Закрыть"></button>
-                </div>
-                <div class="offcanvas-body">
-                    <div class="group">
-                        <input placeholder="Введите ФИО" type="text">
-                    </div>
-                    <div class="group">
-                        <input placeholder="Введите номер" type="number">
-                    </div>
-                    <div class="group">
-                        <div class="dropdown">
-
-
-                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Выберите группу
-                            </button>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Друзья</a></li>
-                                <li><a class="dropdown-item" href="#">Коллеги</a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- <div class="dropdown mt-3">
-                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
-                            Кнопка раскрывающегося списка
-                        </button>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Действие</a></li>
-                            <li><a class="dropdown-item" href="#">Другое действие</a></li>
-                            <li><a class="dropdown-item" href="#">Что-то еще здесь</a></li>
-                        </ul>
-                    </div> -->
-                </div>
-                <div class="add-save-buttons">
-                    <button class="save-button">Сохранить</button>
-                </div>
-            </div>
-        </div>
         <div class="main">
-            Список контактов пуст
+            <div class="offcanvas-from-group">
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasGroup"
+                    aria-labelledby="offcanvasGroupLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasGroupLabel">Группы контактов</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                            aria-label="Закрыть"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                    </div>
+                    <div class="add-save-buttons">
+                        <button class="add-button">Добавить</button>
+                        <button class="save-button">Сохранить</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="offcanvas-from-add-contacts">
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasAddContacts"
+                    aria-labelledby="offcanvasAddContactsLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasAddContactsLabel">Добавление контакта</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                            aria-label="Закрыть"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div class="group">
+                            <input minlength="2" maxlength="35" class="person-name" placeholder="Введите ФИО"
+                                type="text">
+                        </div>
+                        <div class="group">
+                            <input class="person-number" placeholder="Введите номер" type="number">
+                        </div>
+                        <div class="group">
+                            <select class="form-select" id="inputGroupSelect01">
+                                <option disabled selected>Выберите группу</option>
+                            </select>
+                        </div>
+
+                    </div>
+                    <div class="add-save-buttons">
+                        <button class="save-button-contact">Сохранить</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+            </div>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"

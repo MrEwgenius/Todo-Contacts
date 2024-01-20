@@ -4,7 +4,77 @@
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-color: #df7e7e;
+    background: #f6f7f9;
+    // width: 1200px;
+    max-width: 1200px;
+    margin: auto;
+
+    .accordion {
+        @media (max-width: 900px) {
+        }
+        // max-width: 1160px;
+        width: 100%;
+        padding: 0 15px;
+        .accordion-button {
+            color: $blue;
+            font-size: 18px;
+            font-weight: 700;
+        }
+        .accordion-body {
+            color: #000000f1;
+            font-size: 18px;
+            font-weight: 400;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.103);
+            @media (max-width: 800px) {
+                display: block;
+            }
+            @media (max-width: 500px) {
+            }
+            .accordion-name {
+                @media (max-width: 500px) {
+                    margin-bottom: 5px;
+                }
+            }
+
+            .accordion-number-and-control {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: 12px;
+                @media (max-width: 500px) {
+                    display: block;
+                }
+                .number{
+                    @media (max-width: 500px) {
+                        margin-bottom: 10px;
+                    }
+                }
+                .edit-delete-button {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    gap: 8px;
+                    @media (max-width: 500px) {
+                        justify-content: end;
+                    }
+
+                    img {
+                        cursor: pointer;
+                        padding: 7px;
+                        border-radius: 6px;
+                        border: 1px solid rgba(0, 0, 0, 0.199);
+                        &:hover {
+                            background-color: rgba(233, 70, 41, 0.664);
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
-
-
+.editing {
+    border: 2px solid rgb(0, 0, 0);
+}

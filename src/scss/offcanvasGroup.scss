@@ -36,6 +36,9 @@
             height: 38px;
             border-radius: 6px;
             border: 1px solid rgba(0, 0, 0, 0.199);
+            &:hover {
+                background-color: rgba(233, 70, 41, 0.664);
+            }
         }
     }
 }

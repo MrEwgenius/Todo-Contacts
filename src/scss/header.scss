@@ -1,11 +1,18 @@
 .header {
-    max-width: 1170px;
+    max-width: 1200px;
     margin: auto;
     height: 70px;
-    background-color: #c77777;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: $white;
+    padding: 0 15px;
+    @media (max-width: 600px) {
+        flex-direction: column;
+        height: 90px;
+        justify-content: center;
+        gap: 6px;
+    }
     .book-contacts {
         display: flex;
         align-items: center;
@@ -22,14 +29,16 @@
             display: flex;
             align-items: center;
             gap: 8px;
-            // width: 178px;
             padding: 10px 14px;
-            // height: 38px;
             border-radius: 6px;
             background: $add-contact;
             color: $white;
             font-size: 14px;
             font-weight: 700;
+            transition: all 0.2s;
+            &:hover {
+                background: $add-contact-hover;
+            }
         }
         .view-group {
             padding: 10px 14px;
@@ -39,6 +48,11 @@
             font-size: 14px;
             font-weight: 700;
             line-height: 18px;
+            transition: all 0.2s;
+
+            &:hover {
+                background: $blue-dark;
+            }
         }
     }
 }

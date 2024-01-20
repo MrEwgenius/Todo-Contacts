@@ -37,6 +37,10 @@
             border-radius: 6px;
             border: 1px solid rgba(0, 0, 0, 0.199);
         }
+        .form-select {
+            cursor: pointer;
+            background: #0000002a;
+        }
         .dropdown {
             width: 100%;
             button {
@@ -54,6 +58,7 @@
     display: flex;
     justify-content: center;
     gap: 12px;
+
     button {
         padding: 10px 14px;
         border-radius: 6px;
